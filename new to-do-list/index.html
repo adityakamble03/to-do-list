@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="add-to-do-list">
+      <input class="enter-task" type="text" placeholder="Enter your task">
+      <input class="enter-category" type="text" placeholder="Enter the category">
+      <input class="enter-tags" type="text" placeholder="Add tags">
+      <input class="enter-date" type="date">
+      <select class="enter-priority" name="priority">
+        <option value="none" selected disabled hidden>select priority</option>
+        <option value="low">low</option>
+        <option value="medium">medium</option>
+        <option value="high">high</option>
+      </select>
+      <button onclick="addTask();">Add</button>
+    </div>
+
+
+    <div style="text-align:center;">
+      <Button onclick="showTask();">
+        Show all tasks
+      </Button>
+    </div>
+    <div class="filter">
+      Filters:-
+      <div class="filter-date">
+        <input class="filter-date-1" type="date">
+        to
+        <input class="filter-date-2" type="date">
+        <button onclick="dateFilter();">
+          Search
+        </button>
+      </div>
+      <div class="filter-category">
+        <input class="filter-category-1" type="text" placeholder="Enter category">
+        <button onclick="categoryFilter();">
+          Search
+        </button>
+      </div>
+      <div class="filter-priority">
+        <select class="filter-priority-1" name="priority">
+          <option value="none" selected disabled hidden>select priority</option>
+          <option value="low">low</option>
+          <option value="medium">medium</option>
+          <option value="high">high</option>
+        </select>
+        <button onclick="priorityFilter();">
+          Search
+        </button>
+      </div>
+      <div class="sorting-filter">
+        Sort by
+        <select class="sorting-filter-1" name="sorting">
+          <option value="none" selected disabled hidden>select sorting</option>
+          <option value="Duedate">Duedate</option>
+          <option value="Priority">Priority</option>
+        </select>
+        <button onclick="sortingFilter();">
+          Search
+        </button>
+      </div>
+      <div class="search-to-do-list">
+        <input class="search-task" type="text" placeholder="Search Task">
+        <button onclick="searchTask();">
+          Search
+        </button>
+      </div> 
+    </div>
+    
+    <div class="display-to-do-list">
+    </div>
+
+    
+  <script src="script.js"></script>
+  </body>
+</html>

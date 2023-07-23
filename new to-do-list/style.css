@@ -1,0 +1,34 @@
+.add-to-do-list{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 400px;
+    padding-bottom: 40px;
+}
+
+.display-one-task{
+    background-color: antiquewhite;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.display-sub-task{
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 5px;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.display-to-do-list{
+    display: flex;
+    width:400px;
+    flex-direction: column;
+    margin: auto;
+}
